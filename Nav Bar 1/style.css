@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sec1{
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    height: 100px;
+    
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    /* width: 0%; */
+    background-color: aqua;
+    height: 100%;
+}
+.searchbox{
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    margin-left: 20px;
+    align-items: center;
+    width: 50%;
+    background-color: aqua;
+}
+.search{
+    /* border: 1px solid black;  */
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.search input{
+
+    width: 80%;
+    border: 1px solid black;
+    background-color: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn{
+    width: 10%;
+    padding: 8px;
+    background-color: black !important;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: none !important;
+}
+.fa-solid{
+    color: white;
+    font-weight:bold ;
+    font-size: 18px;
+}
+.Navlinks{
+    background-color: aquamarine;
+    /* width: 50%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Navlinks ul{
+    display: flex;
+
+}
+.Navlinks ul li{
+    list-style: none;
+    margin: 25px;
+   
+}
+.Navlinks ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.Navlinks ul li a::after{
+   content: '';
+   height: 2px;
+   width: 0;
+   background: black;
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+   transition: all .6s ease;
+
+}
+.Navlinks ul li a:hover::after{
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px){
+    .container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+}
